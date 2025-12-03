@@ -81,10 +81,6 @@ mvn javafx:run
 | Ali           | 12345 |
 | Tolga         | 54321 |
 
-## 📸 Ekran Görüntüleri
-
-*Giriş Ekranı, Yönetici Paneli ve Ziyaretçi Paneli ekran görüntüleri eklenebilir.*
-
 ## 🎓 OOP Kavramları
 
 Bu projede kullanılan nesne yönelimli programlama kavramları:
