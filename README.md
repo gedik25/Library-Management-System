@@ -81,6 +81,17 @@ mvn javafx:run
 | Ali      | 12345    |
 | Tolga    | 54321    |
 
+## 📸 Screenshots
+
+### Login Screen / Giriş Ekranı
+![Login Screen](screenshots/giris-ekrani.png)
+
+### Admin Panel / Yönetici Paneli
+![Admin Panel](screenshots/yonetici-panel.png)
+
+### Visitor Panel / Ziyaretçi Paneli
+![Visitor Panel](screenshots/ziyaretci-panel.png)
+
 ## 🎓 OOP Concepts
 
 Object-oriented programming concepts used in this project:
@@ -181,6 +192,17 @@ mvn javafx:run
 |---------------|-------|
 | Ali           | 12345 |
 | Tolga         | 54321 |
+
+## 📸 Ekran Görüntüleri
+
+### Giriş Ekranı
+![Giriş Ekranı](screenshots/giris-ekrani.png)
+
+### Yönetici Paneli
+![Yönetici Paneli](screenshots/yonetici-panel.png)
+
+### Ziyaretçi Paneli
+![Ziyaretçi Paneli](screenshots/ziyaretci-panel.png)
 
 ## 🎓 OOP Kavramları
 
