@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #F1941A;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo11.YoneticiEkran">
+    <children>
+      <Text layoutX="47.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kitaplar" wrappingWidth="112.58917236328125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="backIconYE" fitHeight="66.0" fitWidth="66.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backYeclik" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backiconB.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="695.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yeni Kitap Ekle" textAlignment="CENTER" wrappingWidth="149.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="author" layoutX="695.0" layoutY="286.0" promptText="Yazar Adı" />
+      <TextField fx:id="book" layoutX="695.0" layoutY="331.0" promptText="Kitap Adı" />
+      <TextField fx:id="isbn" layoutX="695.0" layoutY="379.0" promptText="ISBN" />
+      <TextField fx:id="category" layoutX="695.0" layoutY="427.0" promptText="Kategori" />
+      <Button layoutX="727.0" layoutY="482.0" mnemonicParsing="false" onAction="#addItemY" style="-fx-background-color: black;" text="Kitap Ekle" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ListView fx:id="booksListY" layoutX="47.0" layoutY="172.0" prefHeight="406.0" prefWidth="596.0" stylesheets="listview.css" />
+      <Text layoutX="47.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yazar-Başlık-ISBN-Kategori" wrappingWidth="265.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchY" layoutX="312.0" layoutY="131.0" onKeyTyped="#searchBook" prefHeight="31.0" prefWidth="162.0" promptText="Ara" />
+      <Button fx:id="editY" layoutX="484.0" layoutY="132.0" mnemonicParsing="false" onAction="#editBookY" style="-fx-background-color: black;" text="Düzenle" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteY" layoutX="569.0" layoutY="132.0" mnemonicParsing="false" onAction="#deleteBookY" style="-fx-background-color: black;" text="Sil" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="948.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yeni Ziyaretci Ekle" textAlignment="CENTER" wrappingWidth="162.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Zkayitad" layoutX="949.0" layoutY="312.0" promptText="Ziyaretci Adı" />
+      <TextField fx:id="ZkayitSifre" layoutX="949.0" layoutY="357.0" promptText="Ziyarteci Şifre" />
+      <Button layoutX="977.0" layoutY="405.0" mnemonicParsing="false" onAction="#ZEkleY" style="-fx-background-color: black;" text="Ziyaretci Ekle" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+    </children>
+</Pane>

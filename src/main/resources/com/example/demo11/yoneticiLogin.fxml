@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="manepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #F1941A;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo11.YoneticiLogin">
+    <children>
+        <Text layoutX="558.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yönetici Adı" textAlignment="CENTER" wrappingWidth="247.58917236328125">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Text>
+        <Button fx:id="YgLoginButton" layoutX="744.0" layoutY="508.0" mnemonicParsing="false" onAction="#YgLoginBClik" prefHeight="56.0" prefWidth="186.0" style="-fx-background-color: black;" text="Giriş Yap" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="857.0" fitWidth="534.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@analib.jpg" />
+            </image>
+        </ImageView>
+      <TextField fx:id="YAdi" layoutX="837.0" layoutY="318.0" promptText="Ad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="558.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Şifre" textAlignment="CENTER" wrappingWidth="247.58917236328125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="Ysifre" layoutX="837.0" layoutY="383.0" promptText="Şifre">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Text layoutX="713.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yönetici Girişi" textAlignment="CENTER" wrappingWidth="247.58917236328125">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="backIconYG" fitHeight="96.0" fitWidth="102.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#backiconYgclik" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backicon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="YgWrongL" layoutX="802.0" layoutY="283.0" textFill="RED" />
+    </children>
+</Pane>
