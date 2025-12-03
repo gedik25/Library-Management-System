@@ -1,0 +1,111 @@
+# 📚 Kütüphane Yönetim Sistemi
+
+Modern ve kullanıcı dostu bir **Kütüphane Yönetim Sistemi** uygulaması. JavaFX ile geliştirilmiş masaüstü uygulaması olarak tasarlanmıştır.
+
+![Java](https://img.shields.io/badge/Java-21-orange)
+![JavaFX](https://img.shields.io/badge/JavaFX-21-blue)
+![Maven](https://img.shields.io/badge/Maven-Build-green)
+
+## 🎯 Proje Hakkında
+
+Bu proje, kütüphane işlemlerini dijital ortamda yönetmek için geliştirilmiş kapsamlı bir masaüstü uygulamasıdır. Nesne yönelimli programlama (OOP) prensipleri kullanılarak tasarlanmış olup, yönetici ve ziyaretçi olmak üzere iki farklı kullanıcı rolü desteklemektedir.
+
+## ✨ Özellikler
+
+### 👨‍💼 Yönetici Paneli
+- 📖 Kitap ekleme, düzenleme ve silme
+- 🔍 Kitap arama (yazar, kitap adı, kategori, ISBN)
+- 👥 Yeni ziyaretçi hesabı oluşturma
+- 📋 Tüm kitapları listeleme
+
+### 👤 Ziyaretçi Paneli
+- 🔍 Kitap arama ve listeleme
+- 📥 Kitap ödünç alma
+- 📤 Kitap teslim etme
+- 📚 Ödünç alınan kitapları görüntüleme
+
+## 🏗️ Teknik Altyapı
+
+- **Programlama Dili:** Java 21
+- **GUI Framework:** JavaFX 21
+- **Build Tool:** Maven
+- **Mimari:** MVC (Model-View-Controller)
+- **Veri Saklama:** Dosya tabanlı (txt formatı)
+
+## 📁 Proje Yapısı
+
+```
+src/main/java/com/example/demo11/
+├── Javafx.java              # Ana uygulama sınıfı
+├── Kullanici.java           # Abstract kullanıcı sınıfı
+├── Yonetici.java            # Yönetici sınıfı
+├── Ziyaretci.java           # Ziyaretçi sınıfı
+├── KullaniciYonetimi.java   # Kullanıcı yönetim işlemleri
+├── Kitap.java               # Kitap model sınıfı
+├── KutuphaneSistemi.java    # Kütüphane sistem yönetimi
+├── YoneticiEkran.java       # Yönetici ekranı controller
+├── ZiyaretciEkran.java      # Ziyaretçi ekranı controller
+├── EditBook.java            # Kitap düzenleme dialog
+└── KitapZatenOduncException.java  # Özel exception sınıfı
+```
+
+## 🚀 Kurulum ve Çalıştırma
+
+### Gereksinimler
+- Java JDK 21 veya üzeri
+- Maven 3.6+
+
+### Adımlar
+
+1. Projeyi klonlayın:
+```bash
+git clone https://github.com/kullanici_adi/Library-Management-System.git
+cd Library-Management-System
+```
+
+2. Maven ile derleyin:
+```bash
+mvn clean compile
+```
+
+3. Uygulamayı çalıştırın:
+```bash
+mvn javafx:run
+```
+
+## 🔐 Varsayılan Giriş Bilgileri
+
+### Yönetici Hesapları
+| Kullanıcı Adı | Şifre |
+|---------------|-------|
+| Ali           | 12345 |
+| Tolga         | 54321 |
+
+## 📸 Ekran Görüntüleri
+
+*Giriş Ekranı, Yönetici Paneli ve Ziyaretçi Paneli ekran görüntüleri eklenebilir.*
+
+## 🎓 OOP Kavramları
+
+Bu projede kullanılan nesne yönelimli programlama kavramları:
+
+- **Kalıtım (Inheritance):** `Kullanici` abstract sınıfından `Yonetici` ve `Ziyaretci` sınıfları türetilmiştir
+- **Kapsülleme (Encapsulation):** Private değişkenler ve getter/setter metodları
+- **Soyutlama (Abstraction):** Abstract `Kullanici` sınıfı
+- **Exception Handling:** Özel `KitapZatenOduncException` exception sınıfı
+
+## 📝 Lisans
+
+Bu proje eğitim amaçlı geliştirilmiştir.
+
+## 👨‍💻 Geliştiriciler
+
+| Geliştirici | Rol |
+|-------------|-----|
+| **Muhammet Ali Gedik** | Proje Sahibi & Geliştirici |
+| **Tolga Ertegi** | Geliştirici |
+
+---
+
+⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+
